@@ -271,7 +271,7 @@ class YLBotClient(discord.Client):
 #                    await message.channel.send(f'Результат атаки: провал')
          
                     
-#я жена кодерки (Пэ.сэ. Екатерина the second) и я официально заявляю что все кто пользует этого бота должен нам по чакчаку!
+#я подруга кодера (Пэ.сэ. Екатерина the second) и я официально заявляю что все кто пользует этого бота должен нам по чакчаку!
 
 intents = discord.Intents.default()
 intents.members = True
