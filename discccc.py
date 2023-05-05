@@ -10,7 +10,7 @@ handler = logging.StreamHandler()
 handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(message)s'))
 logger.addHandler(handler)
 
-TOKEN = "MTEwMDUzMTA4MjkyNDkzNzI0Ng.G2yVUv.-5neG5V5IUJzSx5qFbH9N5GEzbrVgkRt2mh9s4" 
+TOKEN = "MTEwMDUzMTA4MjkyNDkzNzI0Ng.GEYlXs.7b7-Tq_z_PaW4zHjnmwcIOIPtu5Bb2yTlffGBU" 
 bleed = False
 resistdark = 0
 sqlite_connection = sqlite3.connect('E:/disc.db')
@@ -37,7 +37,7 @@ class YLBotClient(discord.Client):
             dice = randint(1,20)
             await message.channel.send(f'Результат броска костей: {dice}')
         elif ".help" in message.content.lower():
-            help = [".help", ".dice", ".attack 1person 2person", ".heal", ".slow", ".poison", ".bleed", ".solace", ".persuation", ".miss"]
+            help = [".help", ".dice", ".attack 1person 2person", ".heal", ".slow person", ".poison", ".bleed", ".solace person", ".persuation", ".miss person"]
             n = '\n'
             await message.channel.send(f'Имеющиеся на данный момент команды: {n}{n.join(help)}')
         elif ".baff" in message.content.lower():
@@ -271,8 +271,7 @@ class YLBotClient(discord.Client):
 #                    await message.channel.send(f'Результат атаки: провал')
          
                     
-#я подруга кодера (Пэ.сэ. Екатерина the second) и я официально заявляю что все кто пользует этого бота должен нам по чакчаку!
-
+#я подруга кодерки (Пэ.сэ. Екатерина the second) и я официально заявляю что все кто пользует этого бота должен нам по чакчаку!
 intents = discord.Intents.default()
 intents.members = True
 intents.message_content = True
