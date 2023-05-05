@@ -2,7 +2,7 @@ import discord
 import logging
 import sqlite3
 from random import randint
-
+#ссылка на презентацию google docs: https://docs.google.com/presentation/d/13MLGEi8rvNSPbnD8i2SgcuTluR-N7K4vtNexrTzqVH8/edit#slide=id.p
 #ссылка на сервер с ботом: https://discord.gg/qqJRNdND
 logger = logging.getLogger('discord')
 logger.setLevel(logging.DEBUG)
